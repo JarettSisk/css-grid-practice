@@ -1,0 +1,306 @@
+.grid {
+  max-width: 1200px;
+  grid-gap: 5px;
+  margin: auto;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+
+
+.header {
+  border-radius: 5px;
+  background-color: #00AABF;
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  justify-items: center;
+  align-items: center;
+}
+
+a {
+  padding: 10px;
+  text-decoration: none;
+  color:white;
+}
+.dropbtn {
+  display: none;
+  cursor: pointer;
+  padding:5px;
+ 
+}
+
+.logo {
+  padding: 10px;
+}
+
+@media (max-width: 700px) {
+  .header {
+    grid-auto-flow: row;
+  }
+  
+  .navLink {
+    display: none;
+    grid-auto-flow: row;
+  }
+
+  .dropbtn {
+    color: white;
+    display: inline-block;
+  }
+}
+
+.show {
+  display: block;
+}
+
+/* end header */
+
+/* start hero */
+
+.main {
+  
+  border-radius: 5px;
+  
+  max-width: 100%;
+  display: grid;
+  grid-gap: 5px;
+  grid-auto-flow: row;
+  justify-items: center;
+  align-items: center;
+  
+}
+.hero {
+  width: 100%;
+}
+
+/* end hero */
+
+/* start card */
+
+.card {
+  display: grid;
+  background-color: #00AABF;
+  grid-template: 1fr / 1fr 1fr;
+  grid-gap: 20px;
+  justify-items: center;
+  align-items: center;
+
+  
+  padding: 20px;
+}
+
+.card > * {
+  width: 100%;
+
+}
+
+@media (max-width: 700px) {
+ .card {
+   grid-template: 1fr auto / 1fr;
+ }
+}
+/* end card */
+
+/* start reverseCard */
+.reverseCard {
+  background-color: #00AABF;
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+  grid-gap: 20px;
+  justify-items: center;
+  align-items: center;
+
+  
+  padding: 20px;
+}
+
+.reverseCard > * {
+  width: 100%;
+
+}
+
+@media (max-width: 700px) {
+    .reverseCard {
+    grid-template: 1fr auto / 1fr;
+  }
+
+  .reverseCard :nth-child(1) {
+    order:1;
+  }
+}
+/* end reverseCard */
+/* start centeredTitle */
+.centeredTitle {
+  width: 100%;
+  background-color: #00AABF;
+  justify-self: center;
+}
+/* end centerdTile */
+/* start triColumn */
+.triColumn {
+  padding: 20px;
+  background-color: #00AABF;
+  display: grid;
+  grid-template: auto / 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.triColumn div {
+  padding: 20px;
+  background-color: #565656;
+  display: grid;
+  grid-template: auto 1fr auto / none;
+  grid-auto-flow: row;
+  justify-items: center;
+}
+.triColumn div > * {
+margin: 10px;
+}
+.triColumn div h2 {
+  color: #7DF1FF;
+}
+.triColumn div p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.triColumn div a {
+  width: 50%;
+  background-color: #00AABF;
+  border: 1px solid black;
+  border-radius: 5px;
+  
+}
+@media (max-width: 800px) {
+  .triColumn {
+  grid-template: auto auto auto /none;
+}
+
+}
+/* end triColumn */
+/* start biColumn */
+.biColumn {
+  padding: 20px;
+  background-color: #00AABF;
+  display: grid;
+  grid-template: auto / 1fr 1fr;
+  grid-gap: 20px;
+}
+.biColumn div {
+  padding: 20px;
+  background-color: #565656;
+  display: grid;
+  grid-template: auto 1fr auto / none;
+  grid-auto-flow: row;
+  justify-items: center;
+}
+.biColumn div > * {
+margin: 10px;
+}
+.biColumn div h2 {
+  color: #7DF1FF;
+}
+.biColumn div p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.biColumn div a {
+  width: 50%;
+  background-color: #00AABF;
+  border: 1px solid black;
+  border-radius: 5px;
+  
+}
+@media (max-width: 800px) {
+    .biColumn {
+    grid-template: auto auto auto /none;
+  }
+
+}
+/* end biColumn */
+
+/* start faceCard */
+.faceCard {
+  width: 100%;
+  display: grid;
+  background-color: #00AABF;
+  grid-template: 1fr / 1fr 1fr;
+  grid-gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+.faceCard > * {
+  padding: 20px;
+  font-size: 1.4em;
+}
+.faceCard img {
+  height: 250px;
+}
+.faceCard div {
+  text-align: left;
+  justify-self: start;
+}
+
+@media (max-width: 700px) {
+  .faceCard {
+  grid-template: auto auto /none;
+}
+.faceCard div {
+  text-align: center;
+  justify-self: center;
+}
+
+}
+
+
+
+/* start footer */
+
+.footer {
+  height: 100px;
+  border-radius: 5px;
+  background-color: #00AABF;
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
